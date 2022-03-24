@@ -18,8 +18,8 @@ The resource file contains a Specs folder with a document in various formats tha
 - Resource folder has Specs folder with documents showing color scheme and fonts used in project
 
 
-#### Link to Erica's Crochet Creations: 
-https://
+#### Link to view Erica's Crochet Creations: 
+https://quercus-alba.github.io/EricaCrochetCreations/
 
 
 Please provide feedback or comments.
