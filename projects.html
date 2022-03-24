@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erica's Blankets Projects</title>
+
+    <link href='resources/css/style.css' rel='stylesheet'>
+    <link href='resources/css/navigation.css' rel='stylesheet'>
+    <!-- projectstyle.css only used with project.html page-->
+    <link href='resources/css/projectstyle.css' rel='stylesheet'>
+
+    <!-- font-family: 'Libre Baskerville', serif; font-family: 'Nunito Sans', sans-serif; -->
+    <!-- font-family: 'Roboto', sans-serif; font-family: 'Karla', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Table JS Code -->
+    <script type="text/javascript">
+        function makeTableScroll() {
+            // Constant retrieved from server-side via JSP
+            var maxRows = 5;
+
+            var table = document.getElementById('projTable');
+            var wrapper = table.parentNode;
+            var rowsInTable = table.rows.length;
+            var height = 0;
+            if (rowsInTable > maxRows) {
+                for (var i = 0; i < maxRows; i++) {
+                    height += table.rows[i].clientHeight;
+                }
+                wrapper.style.height = height + "px";
+            }
+        }
+    </script>
+    <!-- End of Table JS Code -->
+</head>
+
+
+<body onload="makeTableScroll();">
+
+    <header>
+        <!-- Eric's Blankets logo inserted as background img in style.css in header section -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Mission</a></li>
+                <li><a href="index.html#featured-projects">Featured Projects</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+              </ul>
+        </nav>
+
+         <!-- Project Section -->
+        <section class="project-list-section" id="project-section">
+            <h2 class="project-list-header">Projects</h2>
+
+        </section>
+    </header>
+
+
+    <!-- Table Section -->
+    <div class="table-container">
+        <div class="scrollingTable">
+            <table id="projTable">
+                <thead>
+                    <tr>
+                      <th scope="col">DATE</th>
+                      <th scope="col">DESCRIPTION</th>
+                      <th scope="col">IMAGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_01.jpg"/ 
+                            alt="Image of crochet from the middle shell blanket"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_02.jpg"/ 
+                            alt="Image of crochet floor pouf"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_03.jpg"/ 
+                            alt="Image of Personalized blanket"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_04.jpg"/ 
+                            alt="Image of amigurumi squid stuffed animal"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_05.jpg"/ 
+                            alt="Image bobble stitch pillow"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_06.jpg"/ 
+                            alt="Image of briar cardigan"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_07.jpg"/ 
+                            alt="Image of daisy crochet coasters"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_08.jpg"/ 
+                            alt="Image of Bernat spiral blanket"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_01.jpg"/ 
+                            alt="Image of crochet from the middle shell blanket"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_02.jpg"/ 
+                            alt="Image of crochet floor pouf"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_03.jpg"/ 
+                            alt="Image of Personalized blanket"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_04.jpg"/ 
+                            alt="Image of amigurumi squid stuffed animal"></td>
+                    </tr>
+                    <tr>
+                        <td>12/99/2022 Date</td>
+                        <td>Discription field goes here - this can be a short or long discription</td>
+                        <td style="text-align: center;"><img src="resources/images/product_05.jpg"/ 
+                            alt="Image bobble stitch pillow"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- End of Table Section-->
+
+    <!-- Footer copyright section -->
+    <footer>
+        <p class="copyright">Copyright &copy; 2022 Erica's Crochet Creations</p>
+    </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+
+nav {
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+    padding-top: 25px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+nav li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 100%;
+    float: left;
+    padding: 0px 10px;
+    list-style-type: none;
+}
+
+nav a {
+    vertical-align: middle;
+    color: #F9FAF4;
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+nav li:hover {
+    background-color: #628285;
+    transition: background-color .1s, color .1s;
+  }
+
+nav li:active {
+    font-weight: 500;
+    border: 1px solid #F17A7E;
+  }
+
+
+/* Resizes and centers navigation menu for smaller 
+   cell phone or tablet screen size */
+  @media only screen and (max-width: 1150px) {
+    nav {
+      justify-content: center;
+      padding-top: 48px;
+    }
+    nav li {
+        font-size: 1.0rem;
+    }
+  }
+  
+
+

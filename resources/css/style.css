@@ -1,0 +1,213 @@
+
+body {
+    background-color: #4A6163;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* header and logo section */
+/* see navigation.css for nav menu buttons */
+header {
+    width: 100%;
+    height: 95px;
+    background-color: #4A6163;
+    position: fixed;
+    border-bottom: 1px solid #F17A7E;
+    top: 0px;
+    /* larger sized logo for wider screens */
+    background-image: url("../../resources/images/ericacrochetcreations_logo_02.jpg");
+    background-repeat:no-repeat;
+    background-position: top 15px left;
+    z-index: 3;   /* Ensures header is top layer on any webpage */
+}
+
+/* Resize and centers logo for smaller cell phone or tablet screen */
+@media only screen and (max-width: 1150px) {
+    header {
+        /* smaller sized logo for narrower screens */
+        background-image: url("../../resources/images/ericacrochetcreations_logo_03.jpg");
+        background-repeat:no-repeat;
+        background-position: top 2px center;  /* Center logo 2px from top of page */
+        height: 105px;  /* required hight to accomodate centering nav buttons under log */
+    }
+  }
+
+/* Mission section */
+.mission-container {
+    background-image: url("../../resources/images/mission_large.jpg");
+    background-repeat:no-repeat;
+    background-position: bottom;  /* "bottom" - sets mission banner at very top of image*/
+    height: 684px;
+    max-width: 1150px;
+    margin: 45px auto 40px auto;
+    padding-top: 65px;
+}
+
+.text-over {
+    background-color: rgba(249, 250, 244, .50);
+    padding: 1px;
+    text-align: center;
+    line-height: 1.0em;
+}
+
+.mission-title {
+    font-size: 24pt;
+    font-weight:700;
+    align-self: flex-start;
+}
+
+.mission-text {
+    font-size: 22pt;
+    font-weight:400;
+}
+
+/* Resize mission banner and text for smaller cell phone or tablet screen */
+@media only screen and (max-width: 1150px) {
+    .mission-container {
+        padding-top: 75px;
+        background-image: url("../../resources/images/mission_small02.jpg");
+        background-repeat:no-repeat;
+        background-position: bottom;
+        height: 506px;
+        max-width: 850px;
+    }
+    .mission-title {
+        font-size: 18pt;
+    }
+    .mission-text {
+        font-size: 16pt;
+    }
+  }
+
+/* Featured Blankets */
+.featured-projects {
+    padding-top: 100px;  /* provides room for header at top when using menu button */
+}
+
+.featured-projects-header {
+    color: #FFC94B;
+    border-bottom: 1px solid #F9A66C;
+    font-size: 20pt;
+    font-weight: 700;
+    padding: 0 0 5px 30px; /* top | right | bottom | left  */
+}
+
+.project-container {
+    display: inline-flex;
+    max-width: 1800px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img {
+    height: 420px;
+    width: 300px;
+    padding: 15px 15px;
+}
+
+.project h4 {
+    margin-block-start: 0em;  /* align tea names at top of block so 10px are between image and name */
+    color: #FFC94B;
+    inline-size: 330px;
+    text-align: center; 
+    height: 40px;
+
+}
+
+/* Center Featured Blanket title */
+@media only screen and (max-width: 1150px) {
+    .featured-projects-header {
+        text-align: center; 
+    }
+  }
+
+/* Featured Blankets */
+.about-erica {
+    padding-top: 1px;  /* provides room for header at top when using menu button */
+}
+
+.about-container {
+    display: grid;
+    padding: 0px 0px 0px 20px;   /* top | right | bottom | left  */
+    grid-template-columns: 560px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1300px;
+}
+
+.about-header {
+    color: #FFC94B;
+    border-bottom: 1px solid #F9A66C;
+    font-size: 20pt;
+    font-weight: 700;
+    padding: 0 0 5px 30px; /* top | right | bottom | left  */
+}
+
+.about-img {
+    padding: 20px 0px 0 0px;   /* top | right | bottom | left  */
+    width: 560px;
+    height: 400px;
+}
+
+.about-info {
+    color: #FFC94B;
+    font-size: 14pt;
+}
+
+/* Resize About img and text */
+@media only screen and (max-width: 1150px) {
+    .about-container {
+       /* grid-template-columns: 280px 1fr; */
+        display: inline-flex;
+        max-width: 1300px;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .about-header {
+        text-align: center; 
+    }
+
+    .about-img {
+        width: 350px;
+        height: 250px; 
+    }
+
+    .about-info {
+        font-size: 10pt;
+    }
+  }
+
+/* Footer and contact info */
+footer {
+    color: #FFC94B;
+    padding: 15px 0 5px 30px;   /* top | right | bottom | left  */
+    line-height: 0em;
+}
+
+.copyright {
+    padding-top: 20px;
+    font-size: 9pt;
+}
+
+/* Center and resize footer contact information */
+@media only screen and (max-width: 1150px) {
+    footer {
+        text-align: center; 
+        padding-top: 5px;
+        font-size: 80%;
+    }
+
+    .copyright {
+        padding-top: 5px;
+        text-align: center;
+        font-size: 9px;
+    }
+  }
+
+
+
